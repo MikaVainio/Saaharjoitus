@@ -4,7 +4,7 @@
 import luokat
 
 # Luodaan testejä varten olio
-pvm= '25.3.2021'
+pvm = '25.3.2021'
 lampo = 4.5
 tuulen_nopeus = 3
 tuulen_suunta = 90
