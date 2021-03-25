@@ -1,0 +1,2 @@
+# Saaharjoitus
+Olioharjoitus säätietojen keruusta
