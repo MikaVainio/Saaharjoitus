@@ -4,13 +4,14 @@
 import luokat
 
 # Luodaan testejä varten olio
+numero = 1
 pvm = '25.3.2021'
 lampo = 4.5
 tuulen_nopeus = 3
 tuulen_suunta = 90
 pilvisyys = 1
 nakyvyys = 25
-testihavainto = luokat.Saahavainto(pvm, lampo, tuulen_nopeus, tuulen_suunta, pilvisyys, nakyvyys)
+testihavainto = luokat.Saahavainto(numero, pvm, lampo, tuulen_nopeus, tuulen_suunta, pilvisyys, nakyvyys)
 
 def test_mps2km():
     assert round(testihavainto.mps2kmh(), 1) == 10.8

@@ -8,14 +8,16 @@
 
 class Saa_asema:
     """Luokka, jossa määritellään sääaseman ominaisuudet"""
-    def __init__(self, nimi, tyyppi, sijainti):
+    def __init__(self, numero, nimi, tyyppi, sijainti):
+        self.numero = numero
         self.nimi = nimi
         self.tyyppi =tyyppi
         self.sijainti = sijainti
 
 class Saahavainto:
     """Luokka, jossa määritellään sääsanoma ja muunoksia"""
-    def __init__(self, paiva, lampotila, tuulen_nopeus, suunta, pilvisyys, nakyvyys):
+    def __init__(self, numero, paiva, lampotila, tuulen_nopeus, suunta, pilvisyys, nakyvyys):
+        self.numero = numero
         self.paiva = paiva
         self.lampotila = lampotila
         self.tuulen_nopeus = tuulen_nopeus
@@ -34,8 +36,8 @@ class Saahavainto:
         return kts
 
 if __name__ == "__main__":
-    saa_asema = Saa_asema('Rajakari', 'Rannikkoasema', 'Turku')
-    saahavainto = Saahavainto('25.4.', 4, 3, 90, 1, 25)
+    saa_asema = Saa_asema(1, 'Rajakari', 'Rannikkoasema', 'Turku')
+    saahavainto = Saahavainto(1, '25.4.', 4, 3, 90, 1, 25)
     print(saa_asema.sijainti, saa_asema.nimi)
     print('Tuuli:', saahavainto.tuulen_nopeus, 'm/s')
     print('Tuuli:', round(saahavainto.mps2kmh(), 1), 'km/h')
